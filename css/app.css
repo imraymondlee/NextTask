@@ -1,0 +1,209 @@
+body{
+	background-color: #fdfdfd;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*Side Menu*/
+.side_menu{
+	background-color: #FBA35E;
+	height: 100%;
+	width: 12rem;
+	float: left;
+	position: fixed;
+}
+
+.side_menu h2{
+	color: white;
+	font-size: 2rem;
+	margin: 2rem 0.5rem 0.5rem 1rem;
+}
+
+.side_menu a{
+	color: white;
+	font-weight: 600;
+}
+
+.side_menu a:hover{
+	background: #F67856;
+}
+
+.side_menu a img{
+	width: 25px;
+	margin: 0 0.5rem 0.5rem 0.25rem;
+}
+
+/*Bottom Menu*/
+.bottom_menu{
+	display: none;
+	background-color: #FBA35E;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+.bottom_menu a{
+	color: white;
+	font-weight: 100;
+	font-size: 0.9rem;
+}
+
+.bottom_menu a:hover{
+	background: #F67856;
+}
+
+.bottom_menu a img{
+	width: 25px;
+	margin: 0 auto 0.5rem auto;
+	display: block;
+}
+
+
+
+html, body{
+	height: 100%;
+}
+
+/*Table*/
+
+table{
+	margin-top: 1rem;
+}
+
+td .button{
+	margin: 0;
+}
+
+table tbody tr:nth-child(even){
+	background: none;
+    border-top: solid #e0e0e0 1px;
+    border-bottom: solid #e0e0e0 1px;
+}
+
+.table-button{
+	float: right;
+	margin-top: 2rem;
+}
+
+/*Buttons*/
+
+.button.primary {
+	background-color: #F67856;
+	color: #fefefe;
+}
+.button.primary:hover, .button.primary:focus {
+	background-color: #e47253;
+	color: white;
+}
+
+.button.completed {
+	background-color: #7EA5E2;
+	color: white;
+}
+.button.completed:hover, .button.completed:focus {
+	background-color: #6887b9;
+	color: white;
+}
+
+.button.renew {
+	background-color: #7EA5E2;
+	color: white;
+}
+.button.renew:hover, .button.renew:focus {
+	background-color: #6887b9;
+	color: white;
+}
+
+.button.delete {
+	background-color: #585D69;
+	color: #fefefe;
+}
+.button.delete:hover, .button.delete:focus {
+	background-color: #474b56;
+	color: #fefefe;
+}
+
+.button-center{
+	text-align: center;
+}
+
+/*Heading*/
+h1{
+	margin-top: 2rem;
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+	color: #FBA35E  ;
+	font-weight: 600
+}
+
+h4{
+	text-align: center;
+	margin-top: 0rem;
+	margin-bottom: 1rem;
+	font-size: 1.1rem;
+	color: #F67856;
+}
+
+/*Note box*/
+.task_notebox{
+	height: 280px;
+}
+
+.profile_notebox{
+	height: 199px;
+}
+
+.or{
+	display: inline-block;
+	margin-right: 2rem;
+}
+
+
+
+@media only screen and (max-width: 1680px){
+	.side_menu_offset{
+		margin-left: 15rem;
+	}
+}
+
+
+@media only screen and (max-width: 1057px){
+	.or{
+		display: block;
+		text-align: center;
+		margin: auto;
+		margin-bottom: 1rem;
+	}
+
+	.adjust_primary{
+		text-align: center;
+	}
+}
+
+/*Mobile*/
+@media only screen and (max-width: 880px){
+	.side_menu_offset{
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+
+	.side_menu{
+		display: none;
+	}
+
+	.bottom_menu{
+		display: block;
+	}
+
+}
+
+@media only screen and (max-width: 639px){
+	html, body{
+		margin-bottom: 15rem;
+	}
+}
+
+@media only screen and (max-width: 420px){
+	.bottom_menu a{
+		padding: 0.6rem;
+	}
+}
